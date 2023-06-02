@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/myaccount.css">
+    <script src="js/myact.js"></script>
+    <title>Tài khoản của tôi</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Navbar -->
+        <div class="menu-top">
+            <img src="img/topbar_img.webp" alt="">
+        </div>
+        <div class="menu-middle">
+            <div class="menu-middle-inside">
+                <div class="menu-middle-left">
+                    <p class="hotline">Hotline: <strong> 0123.456.789</strong> (8h - 12h, 13h30 - 17h)</p>
+                    <p class="cooperate"><a href="">Liên hệ hợp tác</a></p>
+                </div>
+                <div class="menu-middle-right">
+                    <p class="shop-system"><a href="">Hệ thống cửa hàng</a></p>
+                    <p class="order-check"><a href="">Kiểm tra đơn hàng</a></p>
+                    <p class="contact"><a href="">Liên hệ</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-bottom">
+            <div class="menu-bottom-inside">
+                <div class="logo">
+                    <a href="">TECHGO</a>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm">
+                    <button type="submit" class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="menu-bottom-items">
+                    <div class="mn-bt-it1-inside">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <p>Giao hoặc đến lấy tại <i style="margin-left: 5px;"
+                                        class="fa-solid fa-angle-down"></i></p>
+                                <p>Trường đại học Công nghiệp Hà Nội</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mn-bt-it2-inside">
+                        <div class="account">
+                            <i class="fa-regular fa-user"></i>
+                            <div>
+                                <p>Đăng nhập / Đăng ký</p>
+                                <p>Tài khoản của tôi <i class="fa-solid fa-angle-down"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mn-bt-it3-inside">
+                        <div class="cart">
+                            <i class="fa-solid fa-cart-shopping">
+                                <span class="cart-pro-quantity">0</span>
+                            </i>
+                            <p>Giỏ hàng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category">
+            <div class="menu-category-container">
+                <div class="category">
+                    <i class="fa-solid fa-bars"></i>
+                    <p>Danh mục sản phẩm</p>
+                </div>
+                <div class="commit">
+                    <div class="commit-quality">
+                        <img src="https://theme.hstatic.net/200000516791/1000880762/14/header_03_policy_1_ico.png?v=2258"
+                            alt="">
+                        <p>Đảm bảo chất lượng</p>
+                    </div>
+                    <div class="commit-ship">
+                        <img src="https://theme.hstatic.net/200000516791/1000880762/14/header_03_policy_2_ico.png?v=2258"
+                            alt="">
+                        <p>Miễn phí vận chuyển</p>
+                    </div>
+                    <div class="commit-check">
+                        <img src="https://theme.hstatic.net/200000516791/1000880762/14/header_03_policy_3_ico.png?v=2258"
+                            alt="">
+                        <p>Mở hộp kiểm tra nhận hàng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="act">
+            <h2>My account</h2>
+            <div class="people">
+                <ul>
+                    <h3>WELCOME, JONE</h3>
+                    <div class="order" onclick="vg()">
+                        <i class="fa-solid fa-box"></i>
+                        <li>Orders </li>
+                        <div class="click1" id="1_1" style="display: flex;flex-direction: column;height: 100vh;">
+    
+                        <div class="od1" style="background: white;">
+                            <div class="xacnhan">
+                                <div class="xn1">
+                                    <i class="fa-solid fa-truck" style="color: #2ad214;"></i>
+                                    <p>Giao hàng vào thứ 3 16/05 </p>
+                                </div>
+                                <div class="xn2">
+                                    <i class="fa-regular fa-circle-dot" style="color: #2ad214;"></i>
+                                    <p>Chờ xác nhận </p>
+                                </div>
+                            </div>
+                            <div class="thongtin">
+                                <img src="/TTCSN-Nhóm 11/img/dienthoia.webp" alt="">
+                                <div class="tt1">
+                                    <p>Điện thoại Samsung Galaxy A54 5G (8GB/256gb) - Hàng chính hãng </p>
+                                    <p>Thương hiệu: Samsung </p>
+                                    <p class="tien">8.690.000 ₫</p>
+                                    <p>Phiếu giảm giá : 5%</p>
+                                </div>
+                            </div>
+                            <div class="thanhtoan">
+                                <div class="tt1">
+                                    <p>Tổng tiền : 8.225.000 ₫</p>
+                                </div>
+                                <div class="but">
+                                    <button>Mua lại </button>
+                                    <button>Xem chi tiết </button>
+                                    <button>Theo dõi đơn </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="od2" style="background: white;clear:both">
+                            <div class="xacnhan">
+                                <div class="xn1" >
+                                    <i class="fa-solid fa-ban" style="color: #c50d1f;"></i>
+                                    <p  style="color:#c50d1f;">Đã hủy  </p>
+                                </div>
+                                
+                            </div>
+                            <div class="thongtin">
+                                <img src="/TTCSN-Nhóm 11/img/maytinhwebp.webp" alt="">
+                                <div class="tt1">
+                                    <p>Apple iPad 10.2-inch (9th Gen) Wi-Fi, 2021</p>
+                                    <p>Thương hiệu: Apple </p>
+                                    <p class="tien">10.990.000 ₫</p>
+                                    <p>Phiếu giảm giá : 36%</p>
+                                </div>
+                            </div>
+                            <div class="thanhtoan">
+                                <div class="tt1">
+                                    <p>Tổng tiền : 6.990.000 ₫ </p>
+                                </div>
+                                <div class="but">
+                                    <button>Mua lại </button>
+                                    <button>Xem chi tiết </button>
+                                </div>
+                            </div>
+    
+                        </div>
+                        </div>
+                    </div>
+                    <!-- <div class="fvr" onclick="vg1()">
+                        <i class="fa-solid fa-heart"></i>
+                        <li>Favorites </li>
+                        <div class="click1" id="1_2" style="height: 100vh;">
+                            
+                            <div class="thongtin">
+                                <img src="/IMG/maytinhwebp.webp" alt="">
+                                <div class="tt1">
+                                    <p>Apple iPad 10.2-inch (9th Gen) Wi-Fi, 2021</p>
+                                    <p>Thương hiệu: Apple </p>
+                                  <div> <i class="fa-solid fa-heart" style="color: #d336ce;"></i></div> 
+                                    
+                                </div>
+                            </div>
+                            
+    
+                        </div>
+                    </div> -->
+                    <div class="psn" onclick="vg2()">
+                        <i class="fa-solid fa-user"></i>
+                        <li>Personal data </li>
+                        <div class="click1" id="1_3">
+                            <div class="data1">
+                                <h3>Thông tin cá nhân </h3>
+                                <form action="">
+                                    <label for="">Họ & Tên</label>
+                                    <input type="text" placeholder="Thêm họ tên "><br>
+                                    <label for="">Nickname</label>
+                                    <input type="text" placeholder="Thêm nickname "><br>
+                                    <label for="">Ngày sinh</label>
+                                    <input type="number" min="1" max="31" class="ns" placeholder="Ngày" class="item2">
+                                    <input type="number" min="1" max="12" class="ns" placeholder="Tháng" class="item2">
+                                    <input type="number" min="1900" max="2023" class="ns" placeholder="Năm"
+                                        class="item2"><br>
+                                    <label for="">Giới tính </label>
+                                    <input type="radio" name="gt" class="gt"> Nam
+                                    <input type="radio" name="gt" class="gt">Nữ
+                                    <input type="radio" name="gt" class="gt"> Khác <br>
+                                    <label for="">Quốc tịch</label>
+                                    <select id="country" name="country">
+                                        <option value="">Chọn quốc gia</option>
+                                        <option value="vn">Việt Nam</option>
+                                        <option value="us">Mỹ</option>
+                                        <option value="uk">Anh</option>
+                                        <option value="fr">Pháp</option>
+                                    </select>
+                                    <br>
+                                    <button type="button">Lưu thay đổi </button>
+                                </form>
+                            </div>
+                            <div class="data2">
+                                <form action="">
+                                    
+                                    <h3>Số điện thoại & email </h3>
+                                    <div>
+                                    <i class="fa-solid fa-phone" style="color: #626e84;"></i>
+                                    <label for="" class="id">Số điện thoại</label>
+                                    <button type="button">Cập nhật</button> <br>
+                                    </div>
+                                    <div>
+                                    <i class="fa-regular fa-envelope" style="color: #5f6c81;"></i>
+                                    <label for="">Email</label>
+                                    <button type="button">Cập nhật</button> <br>
+                                    </div>
+                                    <h3>Bảo mật </h3>
+                                    <div>
+                                    <i class="fa-solid fa-lock" style="color: #8595b2;"></i>
+                                    <label for="">Đổi mật khẩu </label>
+                                    <button type="button">Cập nhật</button> <br>
+                                    </div>
+                                    <div>
+                                    <i class="fa-solid fa-shield-heart" style="color: #788397;"></i>
+                                    <label for="">Thiết lập mã pin</label>
+                                    <button type="button">Thiết lập </button> <br>
+                                    </div>
+                                    <h3>Thiết lập mạng xã hội</h3>
+                                    <div>
+                                    <i class="fa-brands fa-facebook" style="color: #5a677c;"></i>
+                                    <label for="">Facebook</label>
+                                    <button type="button">Liên kết </button><br>
+                                    </div>
+                                    <div>
+                                    <i class="fa-brands fa-google-plus-g" style="color: #5e6a87;"></i>
+                                    <label for="">Google</label>
+                                    <button type="button">Liên kết </button><br>
+                                    </div>
+                                </form>
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+                    <div class="cpd" onclick="vg3()">
+                        <i class="fa-solid fa-lock"></i>
+                        <li>Change password </li>
+                        <div class="click1" id="1_4">
+                            <form action="" id="password-form">
+                                <p>Mật khẩu hiện tại</p>
+                                <input type="password" id="passwordInput1" style="width:300px ;height:25px">
+                                <p id="errorText1" style="font-size:12px ; display:none ; color:red;">* Vui lòng nhập mật
+                                    khẩu </p>
+                                <p>Mật khẩu mới </p>
+                                <input type="password" id="passwordInput" style="width:300px ;height:25px">
+                                <p id="errorText2" style="font-size:12px ; display:none ; color:red;">* Mật khẩu dài 8 đến
+                                    32 kí tự,bao gồm cả chữ và số </p>
+                                <p>Nhập lại mật khẩu mới </p>
+                                <input type="password" id="passwordInput3" style="width:300px ;height:25px">
+                                <p id="errorText3" style="font-size:12px ; display:none ; color:red;">* Mật khẩu không khớp
+                                </p>
+                                <button type="button" onclick="check()">Lưu thay đổi </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="adr" onclick="vg4()">
+                        <i class="fa-solid fa-house-user"></i>
+                        <li>Addresses </li>
+                        <div class="click1" id="1_5">
+                            <div class="qli">
+                                <h3>Địa chỉ giao hàng</h3>
+                                <span class="gh">
+                                    <p>Chu Quoc Vuong </p>
+                                    <p class="xn"> <i class="fa-regular fa-circle-check fa-xs" style="color: #1f5127;"></i>
+                                        Địa chỉ mặc định</p>
+                                </span>
+                                <p><span style="color:#695959;">Địa chỉ </span>: Số 298 đường Cầu Diễn, Quận Bắc Từ Liêm,
+                                    Thành phố Hà Nội </p>
+                                <p><span style="color:#695959;">Số điện thoại </span>: 097673524</p>
+                                <span class="add">
+                                    <i class="fa-solid fa-plus" style="color: #525760;"></i>
+                                    <button type="button">Thêm địa chỉ mới </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sgo" onclick="vg5()">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <li>Sign out</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
