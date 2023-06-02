@@ -314,16 +314,17 @@ section{
 .heading{
     text-align: center;
     font-size:4rem;
-    color: #333;
+    color: #fff;
     padding:1rem;
     margin:2rem 0;
-    background: rgba(255,51,153,.05);
+    background: #263342;
+    text-shadow: 2px 2px 2px rgba(206,89,55,0);
 }
 .heading span{
     color:var(--pink);
 
 }
-.btn{
+.tittle .btn{
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
@@ -332,14 +333,23 @@ section{
     padding: .9rem 3.5rem;
     cursor: pointer;
     font-size: 1.7rem;
-    border: 2px solid #333;
+    border: none;
     text-decoration: none;
+    transition: all 0.25s ease-in;
 }
 .btn:hover{
     background: transparent;
-    border: 2px solid #fabb00;
     color: #000;
     cursor: pointer;
+    font-weight: 900;
+    transition: all 0.25s ease-in;
+}
+.btn-1:hover {
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 2px -1px ;
+    transition: all 0.25s ease-in;
+    border: 3px solid #fff;
 }
 .home{
     display: flex;
@@ -381,27 +391,27 @@ section{
 }
 .about .row .about-left{
     /* flex: 1 1 40rem; */
-    position: relative;
+   position: relative;
 }
 .about .row .about-left img{
-    width:100%;
-    border:1.5rem solid #fff;
+    max-width:100%;
+    border:0.5rem solid #fff;
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     height:100%;
     object-fit: cover;
 }
 .about .row .about-left h3{
-    position: absolute;
+    /* position: absolute; */
     /* top: 50%;
     transform: translate(-50%); */
     top: 228px;
     font-size: 3rem;
-    background: #fff;
+    color:#fabb00;
     width:100%;
     padding:1rem 2rem;
     text-align: center;
-    mix-blend-mode: screen;
+    /* mix-blend-mode: screen; */
 
 }
 .about .row .tittle{
@@ -477,6 +487,7 @@ section{
 }
 .contact .contact-form form .box:focus{
     border-color: var(--pink);
+    outline: none;
 
 }
 .contact .contact-form form textarea{
@@ -503,4 +514,114 @@ section{
 }
 .incons-container .icons .info{
     margin-left: 15px;
+}
+/* Footer */
+.footer{
+    position: absolute;
+    bottom: auto;
+}
+.footer .send {
+    background-color: #009dde;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:110px;
+}
+.footer .send .content{
+    background:#009dde;
+    color:#f5f5f5;
+    line-height: 35px;
+}
+.footer .send .content p{
+    font-size:14px;
+    margin-left:-200px;
+}
+.footer .send .content{
+    margin:0 30px 0 300px;
+}
+.footer .send .btn input{
+    height: 44.4px;
+    width: 550px;
+    padding-left: 10px;
+    border:1px solid white;
+    border-radius:5px;
+}
+.footer .send .btn button{
+    border-radius:5px;
+    color:whitesmoke;
+    font-weight: 600;
+    border:1px solid white;
+    background-color: #f9bb01;
+}
+.footer .send .btn button:hover{
+    background-color: #0f29a0;
+}
+.footer .infor{
+    height:295px;
+    display:flex;
+    margin:40px 0 0 20px;
+}
+.footer .infor a{
+    color:#263342;
+    text-decoration: none;
+    font-size:14px;
+    line-height: 30px;
+}
+.footer .infor li:hover{
+    color:#009dde;
+}
+.footer .infor a:hover{
+    color:#009dde;
+}
+.footer .infor p{
+    font-size:14px;
+    line-height: 30px;
+}
+.footer .infor h3{
+    margin-bottom:25px;
+}
+.footer .infor .item{
+    flex:1;
+    margin-right: 20px;
+}
+.footer .infor .item:nth-child(1){
+    flex:1.5;
+}
+.footer .infor .item:nth-child(2){
+    flex:1.5;
+    padding-right:20px;
+}
+.footer .infor .item .item1{
+    display:flex;
+}
+.footer .infor .item .icon{
+    margin-right: 5px;
+    margin-top:3px;
+}
+.footer .infor .icon1 a i{
+    border :1px solid #a6a0a0;
+    border-radius: 5px;
+    padding:8px 7px;
+    width: 30px;
+    height:30px;
+}
+.footer .infor .icon1 a{
+    margin-right: 5px;
+}
+.footer .infor .icon1 {
+    margin-top:15px;
+}
+
+.footer .infor .icon1 a i:hover{
+    border-color:#009dde;
+}
+
+.footer .end{
+    border-top:1px solid #a6a0a0;
+    height:40px;
+}
+.footer .end p{
+    font-size: 13px;
+    text-align: center;
+    margin:10px auto;
 }
