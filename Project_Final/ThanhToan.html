@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh toán</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    /* CSS cho giao diện */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 4px;
+      padding: 40px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333333;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      color: #666666;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #e3e3e3;
+      border-radius: 4px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      transition: border-color 0.3s ease-in-out;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    select:focus {
+      border-color: #4CAF50;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .success-message,
+    .error-message {
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    .success-message {
+      background-color: #DFF0D8;
+      color: #3C763D;
+      border: 1px solid #D6E9C6;
+    }
+
+    .error-message {
+      background-color: #F2DEDE;
+      color: #A94442;
+      border: 1px solid #EBCCD1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Thanh toán hàng hóa</h1>
+    <form id="paymentForm" onsubmit="submitForm(event)">
+      <label for="name">Họ tên:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="phoneNumber">Số điện thoại:</label>
+      <input type="tel" id="phoneNumber" required>
+
+      <label for="address">Địa chỉ:</label>
+      <input type="text" id="address" required>
+
+      <label for="product">Sản phẩm:</label>
+      <select id="product" required>
+        <option value="">--Chọn sản phẩm--</option>
+        <option value="laptop">Laptop</option>
+        <option value="smartphone">Smartphone</option>
+        <option value="tablet">Tablet</option>
+        <option value="tv">TV</option>
+        <option value="camera">Máy ảnh</option>
+      </select>
+
+      <label for="quantity">Số lượng:</label>
+      <input type="number" id="quantity" min="1" required>
+
+      <label for="discountCode">Mã giảm giá:</label>
+      <input type="text" id="discountCode">
+
+      <label for="shippingMethod">Phương thức vận chuyển:</label>
+      <select id="shippingMethod" required>
+        <option value="">--Chọn phương thức vận chuyển--</option>
+        <option value="standard">Giao hàng tiêu chuẩn</option>
+        <option value="express">Giao hàng nhanh</option>
+      </select>
+
+      <label for="paymentMethod">Phương thức thanh toán:</label>
+      <select id="paymentMethod" required>
+        <option value="">--Chọn phương thức thanh toán--</option>
+        <option value="creditCard">Thẻ tín dụng</option>
+        <option value="bankTransfer">Chuyển khoản ngân hàng</option>
+        <option value="cod">Thanh toán khi nhận hàng</option>
+      </select>
+
+      <input type="submit" value="Thanh toán">
+    </form>
+    <div id="successMessage" class="success-message" style="display: none;">
+      <i class="fa-regular fa-circle-check" style="color: #000000;"></i>
+      Thanh toán thành công!
+    </div>
+    <div id="errorMessage" class="error-message" style="display: none;">
+      <i class="fa-solid fa-xmark" style="color: #000000;"></i>
+      Vui lòng điền đầy đủ thông tin!
+    </div>
+  </div>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+
+      // Lấy giá trị từ các trường nhập liệu
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var phoneNumber = document.getElementById('phoneNumber').value;
+      var address = document.getElementById('address').value;
+      var product = document.getElementById('product').value;
+      var quantity = document.getElementById('quantity').value;
+      var discountCode = document.getElementById('discountCode').value;
+      var shippingMethod = document.getElementById('shippingMethod').value;
+      var paymentMethod = document.getElementById('paymentMethod').value;
+
+      // Kiểm tra nếu thông tin nhập liệu hợp lệ
+      if (name && email && phoneNumber && address && product && quantity && shippingMethod && paymentMethod) {
+        // Gửi thông tin đến server hoặc xử lý tiếp theo
+        // ...
+        // Hiển thị thông báo thành công
+        document.getElementById("successMessage").style.display = "block";
+        document.getElementById("errorMessage").style.display = "none";
+      } else {
+        // Hiển thị thông báo lỗi
+        document.getElementById("successMessage").style.display = "none";
+        document.getElementById("errorMessage").style.display = "block";
+      }
+    }
+  </script>
+</body>
+
+</html>

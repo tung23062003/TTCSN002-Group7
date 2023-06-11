@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dangki.css">
+    <title>Đăng ký</title>
+</head>
+<body>
+    <div class="register">
+        <h2>Tạo tài khoản </h2>
+        <form action="login.html">
+        <p>Email hoặc số điện thoại </p>
+        <input type="text" class="item1" required>
+        <p>Tên đăng nhập </p>
+        <input type="text" class="item1" required>
+        <p>Mật khẩu</p>
+        <input type="password" class="item1" required>
+        <p>Ngày sinh </p>
+        <div class="birthday">
+            
+            <input type="number" min="1" max="31" placeholder="Ngày" class="item2" required>
+         
+            <input type="number" min="1" max="12"  placeholder="Tháng" class="item2" required>
+        
+            <input type="number" min="1900" max="2023" placeholder="Năm" class="item2" required>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox"> Đồng ý với điều khoản và chính sách bảo mật của chúng tôi .
+        </div>
+        <div class="submit">
+            <input type="submit" value="Đăng ký">
+        </div>
+       <a href="login.html">Đã có tài khoản ?</a>
+        </form>
+
+    </div>
+</body>
+</html>
